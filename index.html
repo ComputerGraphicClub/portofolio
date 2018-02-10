@@ -1,0 +1,325 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" value="notranslate">
+  <title>Romain Talou</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:100'>
+  <script src="addonsP5/p5.min.js"></script>
+  <script src="addonsP5/p5.dom.min.js"></script>
+  <script src="addonsP5/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="split-slideshow">
+    <div class="slideshow">
+      <div class="slider">
+
+
+
+        <div class="item">
+          <script>
+            document.getElementById('contact').onclick = function() {
+              document.getElementById('contact_text').style.display = 'block';
+              document.getElementById('tracking_text').style.display = 'none';
+              document.getElementById('credits_text').style.display = 'none';
+              document.getElementById('thanks_text').style.display = 'none';
+            }
+
+            document.getElementById('contact').onmouseover = function() {
+              document.getElementById('contact_text').style.display = 'block';
+              document.getElementById('tracking_text').style.display = 'none';
+              document.getElementById('credits_text').style.display = 'none';
+              document.getElementById('thanks_text').style.display = 'none';
+            }
+
+            document.getElementById('contact').onmouseout = function() {
+              document.getElementById('contact_text').style.display = 'block';
+
+            }
+
+            document.getElementById('tracking').onclick = function() {
+              document.getElementById('tracking_text').style.display = 'block';
+              document.getElementById('contact_text').style.display = 'none';
+              document.getElementById('credits_text').style.display = 'none';
+              document.getElementById('thanks_text').style.display = 'none';
+            }
+
+            document.getElementById('tracking').onmouseover = function() {
+              document.getElementById('tracking_text').style.display = 'block';
+              document.getElementById('contact_text').style.display = 'none';
+              document.getElementById('credits_text').style.display = 'none';
+              document.getElementById('thanks_text').style.display = 'none';
+            }
+
+            document.getElementById('tracking').onmouseout = function() {
+              document.getElementById('tracking_text').style.display = 'block';
+            }
+
+            document.getElementById('credits').onclick = function() {
+              document.getElementById('credits_text').style.display = 'block';
+              document.getElementById('tracking_text').style.display = 'none';
+              document.getElementById('contact_text').style.display = 'none';
+              document.getElementById('thanks_text').style.display = 'none';
+
+            }
+
+            document.getElementById('credits').onmouseover = function() {
+              document.getElementById('credits_text').style.display = 'block';
+              document.getElementById('tracking_text').style.display = 'none';
+              document.getElementById('contact_text').style.display = 'none';
+              document.getElementById('thanks_text').style.display = 'none';
+
+            }
+
+            document.getElementById('credits').onmouseout = function() {
+              document.getElementById('credits_text').style.display = 'block';
+            }
+
+            document.getElementById('thanks').onclick = function() {
+              document.getElementById('thanks_text').style.display = 'block';
+              document.getElementById('credits_text').style.display = 'none';
+              document.getElementById('tracking_text').style.display = 'none';
+              document.getElementById('contact_text').style.display = 'none';
+            }
+
+            document.getElementById('thanks').onmouseover = function() {
+              document.getElementById('thanks_text').style.display = 'block';
+              document.getElementById('credits_text').style.display = 'none';
+              document.getElementById('tracking_text').style.display = 'none';
+              document.getElementById('contact_text').style.display = 'none';
+            }
+
+            document.getElementById('thanks').onmouseout = function() {
+              document.getElementById('thanks_text').style.display = 'block';
+            }
+          </script>
+          <div class="bloc_left">
+            <h2 id="contact_text"><br>Ride with Me<div class="fine_space"></div>?<br><br><br><br>contact[at]romaintalou.fr<br>Also on Github<br></h2>
+            <h2 id="tracking_text"><br>data currently unavailable</h2>
+            <h2 id="credits_text"><br>Font<div class="fine_space"></div>: Respira<br><br><br><br>École Supérieure d'Art et de Design d'Amiens 180/180<br>Haute École d'Art et de Design de Genève ../180</h2>
+            <h2 id="thanks_text"><br>Many Thanks to<br><br><br><br>Little Wings from Mark Gormley</h2>
+          </div>
+
+          <div id='Obj3D_face'>
+
+
+
+          </div>
+
+
+
+          <div class="bloc_right">
+            <h2>I am a French<div class="figure">fig.1</div> human, graphic designer & media designer currently studying in Geneva, Switzerland.<br><br>With an interest in new technologies, digital utopias and hybrid design my aim is to use graphic design as a surface of criticism and reflection to shape the future through research and experimentation.</h2>
+            <h2 class="pagination">18</h2>
+
+
+          </div>
+          <div id="More_information">
+            <h3>
+        <div id="contact">Contact</div> -
+        <div id="tracking">Live Tracking</div> -
+        <div id="credits">Crédits</div> -
+        <div id="thanks">Thanks</div>
+      </h3>
+          </div>
+        </div>
+
+
+
+        <div class="item">
+
+          <div class="img_project_left">
+            <img src="https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg" id="img_print_project_1">
+          </div>
+
+          <div id='Obj3D_print'>
+
+            <img src="https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg" id="img_print_project_1">
+            <script>
+              var sketch1 = function(print) {
+                var printObj;
+                print.setup = function() {
+                  print.createCanvas(windowWidth / 2, windowHeight, WEBGL);
+                  img = loadImage('https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg');
+                  printObj = loadModel('3D/install_min.obj');
+                }
+
+
+                print.draw = function() {
+                  print.background('rgba(0,0,0, 0)');
+                  print.normalMaterial();
+
+                  print.scale(windowWidth * 2);
+                  print.rotateZ(frameCount * 0.01);
+                  //print.rotateX(frameCount * 0.01);
+                  print.rotateY(frameCount * 0.01);
+                  print.model(printObj);
+
+                }
+
+              };
+
+              new p5(sketch1, 'Obj3D_print');
+            </script>
+
+          </div>
+
+          <div class="bloc_right">
+
+            <script>
+              document.getElementById('text_hover').onmouseover = function() {
+                document.getElementById('img_print_project_1').style.display = 'block';
+              }
+
+              document.getElementById('text_hover').onmouseout = function() {
+                document.getElementById('img_print_project_1').style.display = 'none';
+              }
+            </script>
+
+            <h2>Projects<hr><div id="text_hover">Species Technica</div><div class="figure">fig.2</div><br>Open Design<div class="figure">fig.3</div><br>Maison de la Culture<div class="figure">fig.4</div><br>Visual Object Exhibition<div class="figure">fig.5</div><div id="text_hover">Magnetics Fields O1c</div><div class="figure">fig.2</div><br>GC System 01<div class="figure">fig.3</div><br><div id="text_hover">Échange Variable</div><div class="figure">fig.2</div><br>Flag News<div class="figure">fig.3</div><br>BOG<div class="figure">fig.3</div><br><div id="text_hover">Disciples</div><div class="figure">fig.2</div></h2>
+
+
+            <h6>Print</h6>
+
+            <br>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="item">
+          <!--  <div class="bloc_left"> -->
+          <div id='Obj3D_object'>
+
+
+
+
+
+          </div>
+          <!--   </div> -->
+
+          <div class="bloc_right">
+
+
+
+            <h2><div id="text_hover">Magnetics Fields O1c</div><div class="figure">fig.2</div><br>GC System 01<div class="figure">fig.3</div></h2>
+
+
+            <h6>Object</h6>
+          </div>
+        </div>
+
+
+
+        <div class="item">
+
+          <div class="bloc_right">
+
+
+
+            <h2><div id="text_hover">Échange Variable</div><div class="figure">fig.2</div><br>Flag News<div class="figure">fig.3</div><br>BOG<div class="figure">fig.3</div></h2>
+
+
+            <h6>Fiction</h6>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="bloc_left">
+
+          </div>
+
+          <div class="bloc_right">
+            <h2><div id="text_hover">Disciples</div><div class="figure">fig.2</div></h2>
+
+
+            <h6>Photography</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow-text">
+      <div class="item">About</div>
+      <div class="item">Print</div>
+      <div class="item">Object</div>
+      <div class="item">Fiction</div>
+      <div class="item">Photography</div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+
+
+
+  <script src="js/index.js"></script>
+
+  <script>
+    var sketch2 = function(object) {
+
+      object.setup = function() {
+        object.createCanvas(windowWidth / 2, windowHeight, WEBGL);
+        img = loadImage('https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg');
+      }
+
+
+      object.draw = function() {
+        object.background('rgba(0,0,0, 0)');
+        object.rotateY(frameCount * 0.01);
+        object.texture(img);
+        object.sphere(windowWidth / 6);
+      }
+
+    };
+
+    new p5(sketch2, 'Obj3D_object');
+  </script>
+
+  <script>
+    var face = function(face) {
+      var teapot;
+
+      face.preload = function() {
+        teapot = loadModel('3D/me.obj');
+        img = loadImage('https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg');
+      }
+      face.setup = function() {
+        face.createCanvas(windowWidth / 2, windowHeight, WEBGL);
+
+      }
+
+
+      face.draw = function() {
+
+        face.background('rgba(0,0,0, 0)');
+        face.rotateY(frameCount * 0.01);
+        face.rotateX(3.2);
+
+        face.translate(0, -windowHeight / 2.5, 0);
+        face.scale(windowWidth * 0.0025);
+
+        face.normalMaterial();
+        //face.texture(img);
+        face.model(teapot);
+      }
+    };
+
+    new p5(face, 'Obj3D_face');
+  </script>
+
+
+</body>
+
+</html>
